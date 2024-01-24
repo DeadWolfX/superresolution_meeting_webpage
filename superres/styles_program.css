@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    background: url('img/portada5.jpg')
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+
+.table-container {
+    width: 60%;
+    max-width: 60%;
+    margin: 0 auto;
+    position: absolute;
+    top: 175%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 20px;
+    overflow: auto; /* Añade overflow para pantallas pequeñas */
+}
+
+.table-container table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.table-container td,
+.table-container th {
+    padding: 15px;
+    border: 1px solid #fff;
+}
+
+.table-container th {
+    background-color: #555;
+    color: #fff;
+}
+
+
+#overlay-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 20%;
+    background: rgba(0, 0, 0, 0.7); /* Transparencia del fondo negro */
+    display: none;
+}
+
+#overlay-content {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 18px;
+}
+
+body:hover #overlay-container {
+    display: block;
+}
+
+.image-info {
+    position: absolute;
+    top: 3150px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    display: none;
+    border-radius: 20px;
+}
+
+.image-info {
+    display: block;
+}
+
