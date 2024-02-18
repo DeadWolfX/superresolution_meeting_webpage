@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    background: url('/superres/img/portada8.jpg')
+
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+
+
+body:hover #overlay-container {
+    display: block;
+}
+
+.image-info {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    display: none;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.image-info {
+    display: block;
+    z-index: 2;
+}
+
+
+
+
+.slider img {
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  height: 600px; /* Ajusta la altura automáticamente según el ancho */
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.slider-container {
+  position: relative;
+  margin-left: 50px;
+  margin-right: 50px;
+  overflow: hidden;
+}
+
+
+.slider {
+  position: relative;
+  margin-top: 130px;
+  margin-left: 50px;
+  margin-right: 50px;
+  z-index: 1;
+}

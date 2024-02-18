@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    background: url('/superres/img/portada5.jpg')
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.image-info {
+    position: absolute;
+    top: 850px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    display: none;
+    border-radius: 20px;
+}
+
+.image-info {
+    display: block;
+}
+
+
+.schedule-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.show-schedule-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px; /* Añade un pequeño espacio entre los botones si lo deseas */
+}
+
+.schedule-content {
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.schedule-content.active {
+    display: block;
+}
+
+.show-schedule-btn.active-btn {
+    background-color: purple; /* Puedes ajustar el color según tus preferencias */
+}

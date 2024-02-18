@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    background: url('/superres/img/portada.jpg')
+}
+
+
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+header a img {
+    margin-right: 150px; 
+}
+
+h1 {
+    margin: 0; 
+    margin-right: 150px; 
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(51, 51, 51, 0.7); 
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+.data-text1 {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -70%); /* Ajusta el valor según la posición deseada */
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 20px;
+    z-index: 2; /* Asegúrate de que este valor sea mayor que el de los paneles de tiempo */
+}
+
+.data-text2 {
+    position: absolute;
+    top: 123%;
+    left: 50%;
+    transform: translate(-50%, -70%); /* Ajusta el valor según la posición deseada */
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 20px;
+    z-index: 2; /* Asegúrate de que este valor sea mayor que el de los paneles de tiempo */
+}
+
+.data-text2 img {
+    width: 100%; /* Establece el ancho al 100% del contenedor padre */
+    height: auto; /* Mantiene la proporción de la imagen ajustando automáticamente la altura */
+    display: block; /* Asegura que la imagen sea tratada como un bloque */
+    margin: 0;
+}
+
+.time-text {
+    position: absolute;
+    top: 175%;
+    left: 50%;
+    transform: translate(-50%, -70%); /* Ajusta el valor según la posición deseada */
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 20px;
+    z-index: 2; /* Asegúrate de que este valor sea mayor que el de los paneles de tiempo */
+}
+
+.time-panels {
+    position: absolute;
+    top: 195%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.time-panel {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    border-radius: 20px; 
+    margin-right: 20px;
+}
+
+.image-info {
+    position: absolute;
+    top: 2010px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    display: none;
+    border-radius: 20px;
+}
+
+.image-info {
+    display: block;
+}
+
+
