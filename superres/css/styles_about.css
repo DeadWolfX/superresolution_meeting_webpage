@@ -10,8 +10,21 @@ body {
 
 header {
     background-color: #333;
-    padding: 10px;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+
+header .logo-left {
+    margin-right: 700px; /* Ajusta este valor según sea necesario */
+}
+
+header .logo-right {
+    margin-left: 700px; /* Ajusta este valor según sea necesario */
 }
 
 nav {
@@ -39,7 +52,7 @@ body:hover #overlay-container {
 
 .image-info {
     position: absolute;
-    top: 800px;
+    top: 1250px;
     left: 10px;
     background: rgba(0, 0, 0, 0.7);
     color: #fff;
@@ -52,4 +65,142 @@ body:hover #overlay-container {
 .image-info {
     display: block;
     z-index: 2;
+}
+
+.organizers-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.organizer {
+    display: inline-block;
+    margin: 10px 50px 10px 0; /* Agregamos margen derecho de 20px */
+    position: relative;
+    cursor: pointer;
+}
+
+.organizer-photo {
+    width: 200px; /* Ajusta el tamaño según sea necesario */
+    height: 200px;
+    border-radius: 50%; /* Esto hará que la foto sea circular */
+}
+
+.organizer-info {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 15px; /* Ajusta el tamaño del rectángulo ajustando este valor */
+    width: 300px; /* Ajusta el ancho del rectángulo ajustando este valor */
+    height: 100px; /* Ajusta la altura del rectángulo ajustando este valor */
+    display: none;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.organizer:hover .organizer-info {
+    display: block;
+}
+
+.foter img {
+    position: relative;
+    margin-top: 500px;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+@media only screen and (max-width: 600px) {
+    /* Estilos específicos para dispositivos móviles */
+
+    body {
+        font-size: 14px; /* Ajusta el tamaño de la fuente para dispositivos móviles */
+    }
+
+    header {
+        padding: 5px; /* Reduzca el relleno del encabezado */
+        flex-direction: column; /* Cambia la dirección del flexbox a columna para el encabezado */
+    }
+
+    header .logo-left {
+      margin-right: 0px; /* Ajusta este valor según sea necesario */
+    }
+
+    header .logo-right {
+     margin-left: 0px; /* Ajusta este valor según sea necesario */
+    }
+
+    h1 {
+        margin-right: 0; /* Elimina el margen derecho para el título en el encabezado */
+    }
+
+    nav {
+        flex-direction: column; /* Cambia la dirección del flexbox a columna para el menú de navegación */
+        text-align: center; /* Centra los elementos del menú de navegación */
+    }
+
+    nav a {
+        width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    }
+
+    .foter {
+        position: static; /* Cambia la posición a estática para que sigan el flujo normal del documento */
+        transform: none; /* Elimina la transformación */
+        top: auto; /* Elimina la propiedad top */
+        left: auto; /* Elimina la propiedad left */
+        width: 100%; /* Ajusta el ancho al 100% del contenedor */
+        text-align: center; /* Centra el texto */
+    }
+
+
+    .foter img {
+        position: relative;
+        margin-top: 150px;
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+   }
+
+    .organizer {
+        display: inline-block;
+        margin: 50px 50px 100px 60px; /* Agregamos margen derecho de 20px */
+        position: relative;
+        cursor: pointer;
+    }
+
+    .organizer-photo {
+        width: 100px; /* Ajusta el tamaño según sea necesario */
+        height: 100px;
+        border-radius: 50%; /* Esto hará que la foto sea circular */
+    }
+
+    .organizer-info {
+        position: absolute;
+        top: 120%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 15px; /* Ajusta el tamaño del rectángulo ajustando este valor */
+        width: 300px; /* Ajusta el ancho del rectángulo ajustando este valor */
+        height: 100px; /* Ajusta la altura del rectángulo ajustando este valor */
+        display: none;
+        border-radius: 10px;
+        z-index: 2;
+    }
+
+    .image-info {
+        position: absolute;
+        top: 2550px;
+        left: 0px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 10px;
+        display: none;
+        border-radius: 20px;
+        z-index: 2;
+        display: block;
+    }
+
+
 }

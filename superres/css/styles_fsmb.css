@@ -150,10 +150,73 @@ nav a:hover {
     padding: 10px;
     display: none;
     border-radius: 20px;
-}
-
-.image-info {
     display: block;
 }
 
 
+
+.foter img {
+    position: relative;
+    margin-top: 1950px;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+@media only screen and (max-width: 600px) {
+    /* Estilos específicos para dispositivos móviles */
+
+    body {
+        font-size: 14px; /* Ajusta el tamaño de la fuente para dispositivos móviles */
+    }
+
+    header {
+        padding: 5px; /* Reduzca el relleno del encabezado */
+        flex-direction: column; /* Cambia la dirección del flexbox a columna para el encabezado */
+    }
+
+    header a img {
+        margin-right: 0; /* Elimina el margen derecho para la imagen en el encabezado */
+    }
+
+    h1 {
+        margin-right: 0; /* Elimina el margen derecho para el título en el encabezado */
+    }
+
+    nav {
+        flex-direction: column; /* Cambia la dirección del flexbox a columna para el menú de navegación */
+        text-align: center; /* Centra los elementos del menú de navegación */
+    }
+
+    nav a {
+        width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    }
+
+    .data-text1,
+    .data-text2,
+    .time-text,
+    .time-panels,
+    .image-info,
+    .foter {
+        position: static; /* Cambia la posición a estática para que sigan el flujo normal del documento */
+        transform: none; /* Elimina la transformación */
+        top: auto; /* Elimina la propiedad top */
+        left: auto; /* Elimina la propiedad left */
+        width: 100%; /* Ajusta el ancho al 100% del contenedor */
+        text-align: center; /* Centra el texto */
+    }
+
+    .time-panels {
+        flex-direction: column; /* Cambia la dirección del flexbox a columna para los paneles de tiempo */
+    }
+
+    .time-panel {
+        margin-right: 0; /* Elimina el margen derecho para los paneles de tiempo */
+    }
+
+    .foter img {
+        position: relative;
+        margin-top: 100px;
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+   }
+}
