@@ -50,11 +50,7 @@ nav a:hover {
     background: rgba(0, 0, 0, 0.7);
     color: #fff;
     padding: 10px;
-    display: none;
     border-radius: 20px;
-}
-
-.image-info {
     display: block;
 }
 
@@ -91,11 +87,26 @@ nav a:hover {
 }
 
 .foter img {
-    position: relative;
-    margin-top: 1000px;
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
+    position: absolute;
+    top: 1100px;
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 3;
 }
+
+.copy-right {
+    position: absolute;
+    top: 1300px;
+    left: 40%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+    z-index: 3;
+}
+
 
 @media only screen and (max-width: 600px) {
     /* Estilos específicos para dispositivos móviles */
@@ -131,21 +142,39 @@ nav a:hover {
     }
 
 
-    .image-info,
-    .foter {
-        position: static; /* Cambia la posición a estática para que sigan el flujo normal del documento */
-        transform: none; /* Elimina la transformación */
-        top: auto; /* Elimina la propiedad top */
-        left: auto; /* Elimina la propiedad left */
-        width: 100%; /* Ajusta el ancho al 100% del contenedor */
-        text-align: center; /* Centra el texto */
+    .image-info {
+        position: absolute;
+        top: 1500px;
+        left: 10px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 10px;
+        border-radius: 20px;
+        display: block;
     }
 
 
-    .foter img {
-        position: relative;
-        margin-top: 100px;
-        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-        height: auto; /* Mantiene la proporción de la imagen */
-   }
+   .foter img {
+        position: absolute;
+        top: 1600px;
+        width: 100%;
+        height: auto;
+        display: block;
+        z-index: 3;
+    }
+
+    .copy-right {
+        position: absolute;
+        top: 1650px;
+        left: 10px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 10px;
+        display: none;
+        border-radius: 20px;
+        display: block;
+        z-index: 3;
+    }
+
+
 }
