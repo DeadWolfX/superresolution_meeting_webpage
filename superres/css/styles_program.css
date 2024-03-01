@@ -4,7 +4,7 @@ body {
     background-color: #000;
     color: #fff;
     font-family: Arial, sans-serif;
-    background: url('/superres/img/portada5.jpg')
+    background: url('/img/portada5.jpg')
 }
 
 header {
@@ -138,7 +138,7 @@ nav a:hover {
     }
 
     nav a {
-        width: 100%; /* Ajusta el ancho al 100% del contenedor */
+        width: 91%; /* Ajusta el ancho al 100% del contenedor */
     }
 
 
