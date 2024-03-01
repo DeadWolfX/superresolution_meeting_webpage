@@ -9,7 +9,7 @@ body {
 
 
 header {
-    background-color: #333;
+    background-color: #000;
     text-align: center;
     display: flex;
    
@@ -71,7 +71,7 @@ nav a:hover {
 
 .data-text2 {
     position: absolute;
-    top: 38%;
+    top: 41%;
     left: 50%;
     transform: translate(-50%, -70%);
     color: #000000;
