@@ -4,7 +4,7 @@ body {
     background-color: #000;
     color: #fff;
     font-family: Arial, sans-serif;
-    background: url('/img/portada5.jpg')
+    background: url('/superres/img/portada5.jpg')
 }
 
 header {
@@ -107,6 +107,21 @@ nav a:hover {
     z-index: 3;
 }
 
+.download-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Ajusta el margen según sea necesario */
+    transition: background-color 0.3s; /* Agrega una transición para suavizar el cambio de color */
+}
+
+.download-btn:active {
+    background-color: purple; /* Morado o el color que desees */
+}
+
 
 @media only screen and (max-width: 600px) {
     /* Estilos específicos para dispositivos móviles */
@@ -144,7 +159,7 @@ nav a:hover {
 
     .image-info {
         position: absolute;
-        top: 1500px;
+        top: 1780px;
         left: 10px;
         background: rgba(0, 0, 0, 0.7);
         color: #fff;
@@ -157,7 +172,7 @@ nav a:hover {
 
    .foter img {
         position: absolute;
-        top: 1560px;
+        top: 1850px;
         width: 100%;
         height: auto;
         display: block;
@@ -166,7 +181,7 @@ nav a:hover {
 
     .copy-right {
         position: absolute;
-        top: 1600px;
+        top: 1890px;
         left: 50px;
         background: rgba(0, 0, 0, 0.7);
         color: #fff;
@@ -293,7 +308,7 @@ nav a:hover {
 
     .image-info {
         position: absolute;
-        top: 1000px;
+        top: 1060px;
         left: 10px;
         background: rgba(0, 0, 0, 0.7);
         color: #fff;
@@ -304,7 +319,7 @@ nav a:hover {
 
     .foter img {
         position: absolute;
-        top: 1100px;
+        top: 1140px;
         width: 100%;
         height: auto;
         display: block;

@@ -37,3 +37,13 @@ setInterval(updateCountdown, 1000);
 
 // Llamar a la función inicialmente para evitar un retraso en la actualización
 updateCountdown();
+
+$(document).ready(function(){
+    $('.carousel-container').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+});

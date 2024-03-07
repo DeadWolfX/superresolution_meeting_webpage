@@ -1,7 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const downloadBtn = document.querySelector('.download-btn');
     const scheduleBtns = document.querySelectorAll('.show-schedule-btn');
     const scheduleContent = document.getElementById('schedule-content');
 
+    downloadBtn.addEventListener('click', function () {
+        // Puedes redirigir a la URL del PDF y abrir en una nueva ventana
+        const pdfURL = '/superres/docs/program.pdf';
+        window.open(pdfURL, '_blank');
+    });    
+    
     scheduleBtns.forEach(btn => {
         btn.addEventListener('click', function () {
             // Obtén la fecha y los eventos asociados al botón
