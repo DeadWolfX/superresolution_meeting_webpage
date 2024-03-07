@@ -262,23 +262,34 @@ nav a:hover {
 
     .data-text2 {
         position: absolute;
-        top: 55%;
+        top: 49%;
         left: 50%;
         transform: translate(-50%, -70%);
         color: #000000;
         text-align: center;
-        font-size: 60px;
+        font-size: 50px;
         font-weight: bold;
 
         z-index: 2;
     }
 
-
+    .data-text {
+        position: absolute;
+        top: 80%;
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 1);
+        width: 96%;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 2%;
+        z-index: 2;
+    }
 
 
     .time-panels {
         position: absolute;
-        top: 80%;
+        top: 65%;
         left: 50%;
         transform: translate(-50%, -50%);
         display: flex;
@@ -302,7 +313,7 @@ nav a:hover {
     .is-today-panel {
         display: none;
         position: absolute;
-        top: 80%;
+        top: 65%;
         left: 50%;
         transform: translate(-50%, -50%);
         justify-content: space-between;
@@ -312,10 +323,70 @@ nav a:hover {
     }
 
 
+    .image-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: rgba(0, 0, 0, 1);
+        padding: 20px; /* Ajusta según sea necesario */
+    }
+
+    .image-with-text {
+        text-align: center;
+    }
+
+    .image-with-text img {
+        width: 200px; /* Ajusta el tamaño según sea necesario */
+        height: 200px;
+        border-radius: 50%; /* Ajusta según sea necesario */
+        margin-bottom: 10px;
+    }    
+    
+    .invited {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .plenary{
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .carousel-container {
+        width: 95%;
+        left: 4%;
+    }
+
+    /* Estilos para cada elemento del carrusel */
+    .carousel-item {
+        margin-right: 60px; /* Ajusta según sea necesario para agregar espacio entre las imágenes y el texto */
+    }
+
+    /* Estilos para la imagen dentro del carrusel */
+    .carousel-item img {
+        width: 40%;
+        border-radius: 50%;
+        max-width: 200px;
+    }
+
+    .carousel-item a {
+        width: 40%;
+        
+    }
+
+    /* Estilos para el texto dentro del carrusel */
+    .textc {
+        display: flex;
+        align-items: center;
+    }
+
+    .textc p {
+        margin-left: 20px; /* Ajusta según sea necesario para agregar espacio entre la imagen y el texto */
+    }
 
     .foter img {
-        position: absolute;
-        margin-top: 40%;
+        position: relative;
+        margin-top: 2020px;
         width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
         height: auto; /* Mantiene la proporción de la imagen */
     }
@@ -323,16 +394,17 @@ nav a:hover {
 
     .copy-right {
         position: absolute;
-        top: 115%;
-        left: 30%;
-        background: rgba(0, 0, 0, 0.7);
+        top: 2290px;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 1);
         color: #fff;
-        padding: 10px;
-        border-radius: 20px;
+        text-align: center;
+        border-radius: 0px;
         display: block;
         z-index: 2;
-    }
-
+    }        
   
 }
 
