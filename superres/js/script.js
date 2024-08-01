@@ -38,6 +38,15 @@ setInterval(updateCountdown, 1000);
 // Llamar a la función inicialmente para evitar un retraso en la actualización
 updateCountdown();
 
+function toggleDropdown() {
+    var dropdownContent = document.getElementById("dropdownContent");
+    if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+    } else {
+        dropdownContent.style.display = "block";
+    }
+}
+
 $(document).ready(function(){
     $('.carousel-container').slick({
         dots: true,

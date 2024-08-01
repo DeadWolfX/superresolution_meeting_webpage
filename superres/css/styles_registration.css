@@ -1,0 +1,400 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    background: url('/img/portada8.jpeg')
+
+}
+
+header {
+    background-color: #000;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+
+header .logo-left {
+    margin-right: 700px; /* Ajusta este valor según sea necesario */
+}
+
+header .logo-right {
+    margin-left: 680px; /* Ajusta este valor según sea necesario */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+
+
+body:hover #overlay-container {
+    display: block;
+}
+
+.image-info {
+    position: absolute;
+    top: 1900px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+    z-index: 2;
+}
+
+.foter img {
+    position: relative;
+    margin-top: 300px;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.copy-right {
+    position: absolute;
+    top: 1650px;
+    left: 40%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+    z-index: 2;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Cambia el color de fondo según sea necesario */
+    min-width: 160px;
+    z-index: 4;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.register-btn {
+    background-color: orange;
+    color: #000;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Ajusta el margen según sea necesario */
+    transition: background-color 0.3s; /* Agrega una transición para suavizar el cambio de color */
+    font-size: 17px;
+}
+
+.register-btn:active {
+    background-color: darkorange; /* Morado o el color que desees */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    /* Estilos específicos para dispositivos móviles */
+
+    body {
+        font-size: 14px; /* Ajusta el tamaño de la fuente para dispositivos móviles */
+    }
+
+    header {
+        padding: 5px; /* Reduzca el relleno del encabezado */
+        flex-direction: column; /* Cambia la dirección del flexbox a columna para el encabezado */
+    }
+
+    header .logo-left {
+      margin-right: 0px; /* Ajusta este valor según sea necesario */
+    }
+
+    header .logo-right {
+     margin-left: 0px; /* Ajusta este valor según sea necesario */
+    }
+
+    h1 {
+        margin-right: 0; /* Elimina el margen derecho para el título en el encabezado */
+    }
+
+    nav {
+        flex-direction: column; /* Cambia la dirección del flexbox a columna para el menú de navegación */
+        text-align: center; /* Centra los elementos del menú de navegación */
+    }
+
+    nav a {
+        width: 91%; /* Ajusta el ancho al 100% del contenedor */
+    }
+    
+    .data-text {
+        position: absolute;
+        top: 80%;
+        color: #000000;
+        background-color: rgba(255, 255, 255, 1);
+        width: 96%;
+        text-align: center;
+        font-size: 14px;
+        font-weight: normal;
+        padding: 2%;
+        z-index: 2;
+    }
+
+    .register-btn {
+        position: absolute; /* Cambia a posición fija para que el botón se mantenga en su lugar al hacer scroll */
+        top: 550px; /* Distancia desde la parte superior de la ventana del navegador */
+        right: 120px; /* Distancia desde el borde derecho de la ventana del navegador */
+        z-index: 2; /* Asegúrate de que el botón esté por encima de otros elementos */
+    }      
+
+
+    .foter img {
+        position: relative;
+        margin-top: 1670px;
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    .image-info {
+        position: absolute;
+        top: 2120px;
+        left: 0px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 5px;
+        display: none;
+        border-radius: 20px;
+        font-size: 10px;
+        z-index: 2;
+        display: block;
+    }
+
+    .copy-right {
+        position: absolute;
+        top: 2220px;
+        left: 50px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 5px;
+        display: none;
+        border-radius: 20px;
+        font-size: 10px;
+        z-index: 2;
+   }
+
+    .copy-right {
+        display: block;
+        z-index: 2;
+    }
+
+
+}
+
+
+@media screen and (min-width:700px) {
+  /* Estilos específicos para lap top */
+  
+    header .logo-left {
+        margin-right: 300px; /* Ajusta este valor según sea necesario */
+    }
+
+    header .logo-right {
+        margin-left: 370px; /* Ajusta este valor según sea necesario */
+    }
+    
+    
+    .image-info {
+        position: absolute;
+        top: 1350px;
+        left: 10px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 5px;
+        border-radius: 20px;
+        font-size:14;
+        display: block;
+        z-index: 2;
+    }
+
+    .data-text {
+        position: absolute;
+        top: 50%;
+        color: #000000;
+        background-color: rgba(255, 255, 255, 1);
+        width: 96%;
+        text-align: center;
+        font-size: 14px;
+        font-weight: normal;
+        padding: 2%;
+        z-index: 2;
+    }
+
+    .register-btn {
+        position: absolute; /* Cambia a posición fija para que el botón se mantenga en su lugar al hacer scroll */
+        top: 250px; /* Distancia desde la parte superior de la ventana del navegador */
+        right: 550px; /* Distancia desde el borde derecho de la ventana del navegador */
+        z-index: 2; /* Asegúrate de que el botón esté por encima de otros elementos */
+    }  
+
+    .foter img {
+        position: relative;
+        margin-top: 1270px;
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    .copy-right {
+        position: absolute;
+        top: 1525px;
+        left: 30%;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 5px;
+        border-radius: 20px;
+        font-size:14;
+        display: block;
+        z-index: 2;
+    }    
+
+  
+}
+
+
+@media screen and (min-width: 1920px) {
+    /* Estilos específicos para pc */
+
+    header {
+        background-color: #000;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+
+    }
+
+
+    header .logo-left {
+        margin-right: 600px; /* Ajusta este valor según sea necesario */
+    }
+
+    header .logo-right {
+        margin-left: 680px; /* Ajusta este valor según sea necesario */
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    nav a:hover {
+        background-color: #555;
+    }
+
+
+
+    body:hover #overlay-container {
+        display: block;
+    }
+    
+    .data-text {
+        position: absolute;
+        top: 35%;
+        color: #000000;
+        background-color: rgba(255, 255, 255, 1);
+        width: 96%;
+        text-align: center;
+        font-size: 16px;
+        font-weight: normal;
+        padding: 2%;
+        z-index: 2;
+    }
+
+    .register-btn {
+        position: absolute; /* Cambia a posición fija para que el botón se mantenga en su lugar al hacer scroll */
+        top: 250px; /* Distancia desde la parte superior de la ventana del navegador */
+        right: 850px; /* Distancia desde el borde derecho de la ventana del navegador */
+        z-index: 2; /* Asegúrate de que el botón esté por encima de otros elementos */
+    }      
+
+    .image-info {
+        position: absolute;
+        top: 1450px;
+        left: 10px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 10px;
+        border-radius: 20px;
+        display: block;
+        z-index: 2;
+    }
+    
+
+    .foter img {
+        position: relative;
+        margin-top: 1400px;
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    .copy-right {
+        position: absolute;
+        top: 1700px;
+        left: 40%;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 10px;
+        border-radius: 20px;
+        display: block;
+        z-index: 2;
+    }
+
+  
+}

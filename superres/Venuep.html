@@ -6,7 +6,7 @@
     <link rel="icon" type="image/png" href="img/LogoFSMB.png">
     <title>Venue-FNB2024</title>
     <script src="js/jquery-3.7.0.min.js"></script>
-    <script src="js/venue.js"></script>
+    <script src="js/venuep.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/styles_venuep.css">
 </head>
@@ -20,11 +20,18 @@
 
     <nav>
         <a href="FNB.html">Home</a>
-        <a href="Program.html">Program</a>
+        <div class="dropdown">
+            <a  onclick="toggleDropdown()">Program</a>
+            <div class="dropdown-content" id="dropdownContent">
+                <a href="Program.html">Main Topics</a>
+                <a href="Speakers.html">Speakers</a>
+                <!-- Agrega más opciones según sea necesario -->
+            </div>
+        </div>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdA4Cc6dY38kOsNHqUaKI2sUoNzx7HPFyKaXUqxU9qOmIQIw/viewform" target="blank">Registration</a>
         <a href="Venuep.html" >Venue</a>
         <a href="About.html" >About</a>
-        <a href="https://labi.lat/es/"  target="blank">LABI</a>
+        <a href="https://www.labimeeting.com/"  target="blank">LABI</a>
        <!-- <div class="dropdown">
             <a href="#">More</a>
             <div class="dropdown-content">
@@ -40,7 +47,7 @@
    </div>
    
     <div class="image-info" >
-        <p>Cultured neuronal network by Esmeralda Paric & Holly Stefen (Fluorescence, 63X Objective Lens Magnification)</p>
+        <p>Image by José Manuel Martínez López </p>
     </div>
 
     <div class="foter">

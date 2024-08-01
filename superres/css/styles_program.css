@@ -4,7 +4,7 @@ body {
     background-color: #000;
     color: #fff;
     font-family: Arial, sans-serif;
-    background: url('/superres/img/portada5.jpg')
+    background: url('/img/portada5.jpeg')
 }
 
 header {
@@ -83,7 +83,7 @@ nav a:hover {
 }
 
 .show-schedule-btn.active-btn {
-    background-color: purple; /* Puedes ajustar el color según tus preferencias */
+    background-color: darkblue; /* Puedes ajustar el color según tus preferencias */
 }
 
 .foter img {
@@ -108,7 +108,7 @@ nav a:hover {
 }
 
 .download-btn {
-    background-color: #000;
+    background-color: darkblue;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -122,6 +122,27 @@ nav a:hover {
     background-color: purple; /* Morado o el color que desees */
 }
 
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Cambia el color de fondo según sea necesario */
+    min-width: 160px;
+    z-index: 4;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
 
 @media only screen and (max-width: 600px) {
     /* Estilos específicos para dispositivos móviles */
@@ -159,7 +180,7 @@ nav a:hover {
 
     .image-info {
         position: absolute;
-        top: 1780px;
+        top: 1250px;
         left: 10px;
         background: rgba(0, 0, 0, 0.7);
         color: #fff;
@@ -169,10 +190,17 @@ nav a:hover {
         display: block;
     }
 
+    .download-btn {
+        position: absolute; /* Cambia a posición fija para que el botón se mantenga en su lugar al hacer scroll */
+        top: 1200px; /* Distancia desde la parte superior de la ventana del navegador */
+        right: 90px; /* Distancia desde el borde derecho de la ventana del navegador */
+        z-index: 2; /* Asegúrate de que el botón esté por encima de otros elementos */
+    }    
+
 
    .foter img {
         position: absolute;
-        top: 1850px;
+        top: 1300px;
         width: 100%;
         height: auto;
         display: block;
@@ -181,8 +209,8 @@ nav a:hover {
 
     .copy-right {
         position: absolute;
-        top: 1890px;
-        left: 50px;
+        top: 1335px;
+        left: 70px;
         background: rgba(0, 0, 0, 0.7);
         color: #fff;
         padding: 5px;
@@ -213,7 +241,7 @@ nav a:hover {
 
     header .logo-right {
         margin-left: 0%; /* Ajusta este valor según sea necesario */
-        margin-right: 0%;
+        margin-right: 12%;
     }
 
     h1 {
@@ -238,7 +266,7 @@ nav a:hover {
 
     .image-info {
         position: absolute;
-        top: 175%;
+        top: 100%;
         left: 1%;
         background: rgba(0, 0, 0, 0.7);
         color: #fff;
@@ -250,17 +278,25 @@ nav a:hover {
 
     .foter img {
         position: absolute;
-        top: 190%;
+        top: 110%;
         width: 100%;
         height: auto;
         display: block;
         z-index: 3;
     }
 
+
+    .download-btn {
+        position: absolute; /* Cambia a posición fija para que el botón se mantenga en su lugar al hacer scroll */
+        top: 620px; /* Distancia desde la parte superior de la ventana del navegador */
+        right: 500px; /* Distancia desde el borde derecho de la ventana del navegador */
+        z-index: 2; /* Asegúrate de que el botón esté por encima de otros elementos */
+    }
+
     .copy-right {
         position: absolute;
-        top: 210%;
-        left: 40%;
+        top: 126%;
+        left: 35%;
         background: rgba(0, 0, 0, 0.7);
         color: #fff;
         padding: 10px;
@@ -308,7 +344,7 @@ nav a:hover {
 
     .image-info {
         position: absolute;
-        top: 1060px;
+        top: 600px;
         left: 10px;
         background: rgba(0, 0, 0, 0.7);
         color: #fff;
@@ -316,10 +352,17 @@ nav a:hover {
         border-radius: 20px;
         display: block;
     }
+    
+    .download-btn {
+        position: absolute; /* Cambia a posición fija para que el botón se mantenga en su lugar al hacer scroll */
+        top: 500px; /* Distancia desde la parte superior de la ventana del navegador */
+        right: 890px; /* Distancia desde el borde derecho de la ventana del navegador */
+        z-index: 2; /* Asegúrate de que el botón esté por encima de otros elementos */
+    }    
 
     .foter img {
         position: absolute;
-        top: 1140px;
+        top: 690px;
         width: 100%;
         height: auto;
         display: block;
@@ -328,7 +371,7 @@ nav a:hover {
 
     .copy-right {
         position: absolute;
-        top: 1300px;
+        top: 870px;
         left: 40%;
         background: rgba(0, 0, 0, 0.7);
         color: #fff;

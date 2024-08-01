@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     downloadBtn.addEventListener('click', function () {
         // Puedes redirigir a la URL del PDF y abrir en una nueva ventana
-        const pdfURL = '/superres/docs/program.pdf';
+        const pdfURL = '/docs/Preliminary program.pdf';
         window.open(pdfURL, '_blank');
     });    
     
@@ -33,4 +33,16 @@ document.addEventListener('DOMContentLoaded', function () {
             scheduleContent.classList.add('active');
         });
     });
+
+   
 });
+
+function toggleDropdown() {
+    var dropdownContent = document.getElementById("dropdownContent");
+    if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+    } else {
+        dropdownContent.style.display = "block";
+    }
+}
+
